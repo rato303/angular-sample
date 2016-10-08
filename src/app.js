@@ -1,5 +1,5 @@
 import './vendor';
-import {APP_NAME} from './app-constants';
+import {APP_NAME} from './appConstants';
 
 const APP_MODULES = [
   'ngComponentRouter'
