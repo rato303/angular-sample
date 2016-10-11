@@ -12,7 +12,8 @@ export default {
   resolve: {
     extensions: [
       '',
-      '.js'
+      '.js',
+      '.html'
     ]
   },
   module: {
@@ -23,6 +24,10 @@ export default {
         loaders: [
           'babel-loader'
         ]
+      },
+      {
+        test: /\.html$/,
+        loader: 'html'
       }
     ]
   },

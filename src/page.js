@@ -1,4 +1,6 @@
 import App from './app.js';
+import wordTemplate from './word';
+import clearTemplate from './clear';
 
 const app = App.getInstance();
 
@@ -13,7 +15,7 @@ export default class Page {
     app.value('$routerRootComponent', COMPONENT_NAME);
 
     app.component('word', {
-      template: '<h1>Hello World!!</h1>'
+      template: wordTemplate
     });
 
     app.component('clr', {
