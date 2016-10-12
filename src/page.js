@@ -23,8 +23,8 @@ export default class Page {
     });
     
     app.component(COMPONENT_NAME, {
-      template: '<a ng-link="[\'ClickHello\']">Click</a> ' +
-          '<a ng-link="[\'ClickClear\']">Clear</a><ng-outlet></ng-outlet>',
+      template: '<a class="pure-button" ng-link="[\'ClickHello\']">Click</a> ' +
+          '<a class="pure-button" ng-link="[\'ClickClear\']">Clear</a><ng-outlet></ng-outlet>',
       $routeConfig: [{
         path: '/hi',
         name: 'ClickHello',

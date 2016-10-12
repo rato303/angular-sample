@@ -13,7 +13,8 @@ export default {
     extensions: [
       '',
       '.js',
-      '.html'
+      '.html',
+      '.css'
     ]
   },
   module: {
@@ -28,6 +29,14 @@ export default {
       {
         test: /\.html$/,
         loader: 'html'
+      },
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
+      },
+      {
+        test: /\.(jpg|png)$/,
+        loader: 'file-loader?name=[path][name].[ext]'
       }
     ]
   },

@@ -1,7 +1,10 @@
 import './vendor';
+
 import App from './app';
 import AppConfig from './appConfig';
 import Page from './page';
+
+require('purecss/build/pure-min.css');
 
 const app = App.getInstance();
 
