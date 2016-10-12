@@ -1,6 +1,7 @@
 import App from './app.js';
 import wordTemplate from './word';
 import clearTemplate from './clear';
+import pageTemplate from './page.html';
 
 const app = App.getInstance();
 
@@ -23,8 +24,9 @@ export default class Page {
     });
     
     app.component(COMPONENT_NAME, {
-      template: '<a class="pure-button" ng-link="[\'ClickHello\']">Click</a> ' +
-          '<a class="pure-button" ng-link="[\'ClickClear\']">Clear</a><ng-outlet></ng-outlet>',
+      //template: '<a class="pure-button" ng-link="[\'ClickHello\']">Click</a> ' +
+      //    '<a class="pure-button" ng-link="[\'ClickClear\']">Clear</a><ng-outlet></ng-outlet>',
+      template: pageTemplate,
       $routeConfig: [{
         path: '/hi',
         name: 'ClickHello',
